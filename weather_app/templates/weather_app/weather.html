@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather App</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'weather_app/style.css' %}">
+    <title>Current Weather Conditions</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'weather_app/style_weather.css' %}">
 
 
 </head>
 <body>
-    <h1>Weather App</h1>
+    <h1>Current Weather Conditions</h1>
     <form method="post">
         {% csrf_token %}
         <input type="text" name="city" placeholder="Enter a city" required>
