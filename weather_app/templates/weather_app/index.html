@@ -1,19 +1,18 @@
-<!-- weather_forecast.html -->
-{%load static %}
-
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Weather APP</title>
     <link rel="stylesheet" type="text/css" href="{% static 'weather_app/style_index.css' %}">
-
 </head>
 <body>
-    <h1>Weather APP</h1>
-   <ul>
-<li><a href="weathers/">Current weather</a></li>
-<li><a href="forecast/">Weather Forecasting</a></li>
-
-   </ul>
+    <div class="container">
+        <h1>Weather APP</h1>
+        <h1 class="welcome">Welcome, {{ user_first_name }}! Let's check some<br> weather conditions</h1>
+        <ul>
+            <li><a href="weathers/">Current weather</a></li>
+            <li><a href="forecast/">Weather Forecasting</a></li>
+        </ul>
+    </div>
 </body>
 </html>

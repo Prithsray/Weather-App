@@ -1,105 +1,97 @@
 /* style_weather_forecast.css */
 
-/* Reset default styles */
-body, h1, form, ul, li, div {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    text-align: center;
+    background-color: #F5F5F5; /* Light gray background */
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; /* Full viewport height */
 }
 
 .container {
-    max-width: 600px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
     padding: 20px;
-    text-align: center;
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #E0E0E0; /* Light gray border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #333;
-    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Dark gray text color */
+    margin-top: 20px;
 }
 
 form {
-    margin: 20px 0;
+    text-align: center;
 }
 
-input[type="text"] {
-    width: 100%;
+input {
+    width: 80%;
     padding: 10px;
+    margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
 button {
-    background-color: #007bff;
-    color: #fff;
+    width: 50%;
+    padding: 10px 0;
+    background-color: #007BFF; /* Blue button background color */
+    color: #fff; /* White button text color */
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #0056B3; /* Darker blue on hover */
 }
 
 h2 {
-    color: #333;
-    margin: 20px 0;
-}
-
-ul.forecast-list {
-    list-style: none;
+    text-align: center;
+    color: #333; /* Dark gray text color */
     margin-top: 20px;
 }
 
-li.forecast-item {
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+.forecast-list {
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-li.forecast-item:hover {
-    background-color: #eaeaea;
+.forecast-item {
+    background-color: #FFFFFF; /* White background for each forecast item */
+    border: 1px solid #E0E0E0; /* Light gray border */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 10px;
+    width: 30%; /* Set the width to accommodate 3 items per row */
+    text-align: center;
 }
 
 .forecast-item-header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin-bottom: 10px;
+}
+
+.date-time {
     font-weight: bold;
 }
 
-span.date-time {
-    font-size: 18px;
-}
-
-span.temperature {
-    font-size: 18px;
+.temperature {
+    color: #007BFF; /* Blue color for temperature */
 }
 
 .weather-condition {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: capitalize;
+    color: #333; /* Dark gray text color */
 }

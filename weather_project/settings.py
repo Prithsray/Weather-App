@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'weather_app',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -131,3 +132,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 OPENWEATHERMAP_API_KEY = '160464886eb090fe3ced0490a1d50ebd'
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # Use the database for session storage
+SESSION_COOKIE_AGE = 3600

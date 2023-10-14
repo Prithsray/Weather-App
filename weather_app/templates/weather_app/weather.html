@@ -1,26 +1,25 @@
-<!-- weather.html -->
-{%load static%}
+{% load static %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Current Weather Conditions</title>
     <link rel="stylesheet" type="text/css" href="{% static 'weather_app/style_weather.css' %}">
-
-
 </head>
 <body>
-    <h1>Current Weather Conditions</h1>
-    <form method="post">
-        {% csrf_token %}
-        <input type="text" name="city" placeholder="Enter a city" required>
-        <button type="submit">Get Weather</button>
-    </form>
-    {% if weather_data %}
-    <h2>Weather in {{ weather_data.name }}, {{ weather_data.sys.country }}</h2>
-    <p>Temperature: {{ weather_data.main.temp }}°C</p>
-    <p>Weather: {{ weather_data.weather.0.main }}</p>
-    <p>Humidity: {{ weather_data.main.humidity }}%</p>
-    <p>Wind Speed: {{ weather_data.wind.speed }} m/s</p>
-    {% endif %}
+    <div class="container">
+        <h1>Current Weather Conditions</h1>
+        <form method="post">
+            {% csrf_token %}
+            <input type="text" name="city" placeholder="Enter a city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+        {% if weather_data %}
+        <h2>Weather in {{ weather_data.name }}, {{ weather_data.sys.country }}</h2>
+        <p class="temperature">Temperature: {{ weather_data.main.temp }}°C</p>
+        <p class="weather-condition">Weather: {{ weather_data.weather.0.main }}</p>
+        <p>Humidity: {{ weather_data.main.humidity }}%</p>
+        <p>Wind Speed: {{ weather_data.wind.speed }} m/s</p>
+        {% endif %}
+    </div>
 </body>
 </html>
