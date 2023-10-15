@@ -4,7 +4,7 @@ This Django-based web application provides real-time weather information and sat
 
 ![Weather-App](Projectimages/UI.PNG)
 ![Weather App](Projectimages/UI2.PNG)
-![Weather App](Projectimages/UI3.png)
+![Weather App](Projectimages/UI3.PNG)
 ## Features
 
 - Get real-time weather information.
