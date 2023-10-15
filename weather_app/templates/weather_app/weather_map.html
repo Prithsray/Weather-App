@@ -1,0 +1,15 @@
+<!-- weather_app/city_input_form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>City Input Form</title>
+</head>
+<body>
+    <h1>Enter a City Name</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="city_name" placeholder="Enter a city name" required>
+        <button type="submit">Get Satellite Map</button>
+    </form>
+</body>
+</html>
