@@ -2,9 +2,9 @@
 
 This Django-based web application provides real-time weather information and satellite maps based on city names using the Weatherbit.io API. It allows users to enter a city name and view a satellite map of the selected location.
 
-![Weather App Screenshot](Projectimages/UI.png)
-![Weather App Screenshot](Projectimages/UI2.png)
-![Weather App Screenshot](Projectimages/UI3.png)
+![Weather-App](Weather-App/Projectimages/UI.png)
+![Weather App](Projectimages/UI2.png)
+![Weather App](Projectimages/UI3.png)
 ## Features
 
 - Get real-time weather information.
