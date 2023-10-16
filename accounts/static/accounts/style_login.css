@@ -32,6 +32,16 @@ form {
     align-items: center;
     text-align: center;
 }
+ul.messages {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    background-color: #f2dede; /* Background color for error messages */
+    border: 1px solid #ebccd1; /* Border color for error messages */
+    border-radius: 2px;
+    color: #a94442; /* Text color for error messages */
+}
+
 
 form input {
     width: 90%;

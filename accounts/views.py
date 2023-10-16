@@ -16,7 +16,8 @@ def registration_view(request):
         if form.is_valid():
             # Create and save the user to the database
             user = form.save()
-            return redirect('login')  # Redirect to the login page after registration
+            messages.success(request,"Registration Successful")
+            return redirect('default') # Redirect to the login page after registration
     else:
         form = RegistrationForm()
     return render(request, 'accounts/registration.html', {'form': form})

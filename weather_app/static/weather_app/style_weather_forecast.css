@@ -37,6 +37,17 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+h6 {
+    position: absolute; /* Position the element absolutely within its closest positioned ancestor */
+    bottom: 20px; /* Adjust the bottom position as needed */
+    left: 50%; /* Horizontally center the element */
+    transform: translateX(-50%); /* Center the element horizontally */
+    margin: 0;
+    color: #007BFF; /* Blue color for the text */
+    font-size: 16px; /* Adjust the font size as needed */
+    text-align: center; /* Center-align the text */
+}
+
 
 button {
     width: 50%;

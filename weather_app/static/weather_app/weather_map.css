@@ -58,6 +58,17 @@ h1 {
 #getCoordinates:hover {
     background-color: #0056b3;
 }
+h6 {
+    position: absolute; /* Position the element absolutely within its closest positioned ancestor */
+    bottom: 10px; /* Adjust the bottom position as needed */
+    left: 50%; /* Horizontally center the element */
+    transform: translateX(-50%); /* Center the element horizontally */
+    margin: 0;
+    color: #007BFF; /* Blue color for the text */
+    font-size: 16px; /* Adjust the font size as needed */
+    text-align: center; /* Center-align the text */
+}
+
 
 /* Media query for responsive design */
 @media (max-width: 768px) {

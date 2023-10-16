@@ -8,6 +8,15 @@
 <body>
     <div class="container">
         <h1>Login</h1>
+        
+        {% if messages %} <!-- Check if there are messages to display -->
+            <ul class="messages">
+                {% for message in messages %} <!-- Iterate through messages -->
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
