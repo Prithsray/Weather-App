@@ -61,3 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const windyMap = document.getElementById('windy');
     });
 });
+
+
+
+
